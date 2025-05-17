@@ -1,0 +1,41 @@
+C:\Users\fkttd\git_challenge>git --global user.name "tsuchida eita"
+unknown option: --global
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+C:\Users\fkttd\git_challenge>git config --global user.email "fkttdoden5030@icloud.com"
+
+C:\Users\fkttd\git_challenge>git config --global --list
+user.name=doden-5030
+user.emaill=fkttdoden5030@icloud.com
+user.email=fkttdoden5030@icloud.com
+
+C:\Users\fkttd\git_challenge>git log --oneline
+fatal: your current branch 'master' does not have any commits yet
+
+C:\Users\fkttd\git_challenge>echo "Hello,world!" > hello_world.txt
+
+C:\Users\fkttd\git_challenge>git add hello_world.txt
+
+C:\Users\fkttd\git_challenge>git commit -m "Add japanese greeting to hello_world.txt"
+[master (root-commit) 73e5c9d] Add japanese greeting to hello_world.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+C:\Users\fkttd\git_challenge>echo "こんにちは、世界！" >> hello_world.txt
+
+C:\Users\fkttd\git_challenge>git add hello_world.txt
+
+C:\Users\fkttd\git_challenge>git commit -m "Add japanese greeting to hello_world.txt"
+[master e8242d1] Add japanese greeting to hello_world.txt
+ 1 file changed, 1 insertion(+)
+
+C:\Users\fkttd\git_challenge>git log --oneline
+e8242d1 (HEAD -> master) Add japanese greeting to hello_world.txt
+73e5c9d Add japanese greeting to hello_world.txt
+
+C:\Users\fkttd\git_challenge>
